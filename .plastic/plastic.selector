@@ -1,0 +1,4 @@
+repository "CapyGameAR@davidg_u@cloud"
+  path "/"
+    br "/main"
+    co "/main"
