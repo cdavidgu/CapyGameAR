@@ -43,19 +43,6 @@ public class ARContentController : MonoBehaviour
 
     public void MoveLeft()
     {
-        // Debug.Log("MoveLeft");
-        float actualXPos = CapybaraCharacter.transform.localPosition.x;
-        float targetXPos = actualXPos - stepMove;
-        targetXPos = Mathf.Max(targetXPos, -stepMove);
-        while (actualXPos >= targetXPos)
-        {
-            actualXPos = CapybaraCharacter.transform.localPosition.x - deltaPos * Time.deltaTime;
-            CapybaraCharacter.transform.localPosition = new Vector3(actualXPos, CapybaraCharacter.transform.localPosition.y, CapybaraCharacter.transform.localPosition.z);
-        }
-    }
-
-    public void MoveRight()
-    {
         // Debug.Log("MoveRight");
         float actualXPos = CapybaraCharacter.transform.localPosition.x;
         float targetXPos = actualXPos + stepMove;
@@ -63,6 +50,19 @@ public class ARContentController : MonoBehaviour
         while (actualXPos <= targetXPos)
         {
             actualXPos = CapybaraCharacter.transform.localPosition.x + deltaPos * Time.deltaTime;
+            CapybaraCharacter.transform.localPosition = new Vector3(actualXPos, CapybaraCharacter.transform.localPosition.y, CapybaraCharacter.transform.localPosition.z);
+        }
+    }
+
+    public void MoveRight()
+    {
+        // Debug.Log("MoveLeft");
+        float actualXPos = CapybaraCharacter.transform.localPosition.x;
+        float targetXPos = actualXPos - stepMove;
+        targetXPos = Mathf.Max(targetXPos, -stepMove);
+        while (actualXPos >= targetXPos)
+        {
+            actualXPos = CapybaraCharacter.transform.localPosition.x - deltaPos * Time.deltaTime;
             CapybaraCharacter.transform.localPosition = new Vector3(actualXPos, CapybaraCharacter.transform.localPosition.y, CapybaraCharacter.transform.localPosition.z);
         }
     }

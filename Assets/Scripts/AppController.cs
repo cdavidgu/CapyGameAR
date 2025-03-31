@@ -133,6 +133,7 @@ public class AppController : MonoBehaviour
         {
             ARContent = Instantiate(ARContentPrefab, trackedImage.transform.position, trackedImage.transform.rotation);
             ARContent.transform.parent = trackedImage.transform;
+            ARContent.transform.localRotation = Quaternion.Euler(0, 180, 0);
             arController = ARContent.GetComponent<ARContentController>();
             arController.InitARContent();
             HUDPanel.transform.Find("BottomPanel/LeftButton").GetComponent<Button>().onClick.AddListener(() =>

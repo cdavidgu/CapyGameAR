@@ -8565,7 +8565,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279388982
+    rgba: 4284192233
   m_fontColor: {r: 0.9137255, g: 0.58431375, b: 0.35686275, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -10130,8 +10130,8 @@ MonoBehaviour:
   m_Spacing: 150
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
@@ -10469,8 +10469,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 309.9225, y: -209.68951}
-  m_SizeDelta: {x: 619.845, y: 317.0158}
+  m_AnchoredPosition: {x: 283.4225, y: -209.68951}
+  m_SizeDelta: {x: 566.845, y: 359.37903}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2537822460335498849
 MonoBehaviour:
@@ -10602,8 +10602,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1026.7675, y: -209.68951}
-  m_SizeDelta: {x: 513.845, y: 317.02}
+  m_AnchoredPosition: {x: 1000.26746, y: -209.68951}
+  m_SizeDelta: {x: 566.845, y: 359.37903}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2537822460543980933
 MonoBehaviour:
@@ -12088,7 +12088,7 @@ PrefabInstance:
     - target: {fileID: 8203773849107198576, guid: f2a68c3dd95634fc59894768e3b0a7c8,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.00018310547
       objectReference: {fileID: 0}
     - target: {fileID: 8203773849254941239, guid: f2a68c3dd95634fc59894768e3b0a7c8,
         type: 3}
